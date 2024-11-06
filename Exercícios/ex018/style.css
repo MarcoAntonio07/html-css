@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+/* em HTML é id em CSS é # */
+/* em HTML é class em CSS é . */
+
+/* O mesmo ID deve ser usado uma vez */
+/* A mesma Class pode ser usado em varios seletores */
+/* É possivel usar mais de uma classe em um mesmo seletor */
+/* Só é possivel usar o mesmo ID em documentos HTML diferentes */
+/* É possivel usar um ID e uma Classe juntos, porém em ordem de hierarquia as confirgurações do ID irão se sobrepor */
+
+
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: black;
+}
+
+#principal{
+    color: #f90606;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+h2{
+    color: chocolate;
+}
+
+.basico{
+    color: white;
+}
+
+.intermediario{
+    color: orange;
+}
+
+.avancado{
+    color: white;
+}
+
+.destaque{
+    background-color: bisque;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTMLs</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="imagem flexivel">
+    </picture>
+                    
+    
+
+
+
+
+    
+                    <!--Primeira maneira de colocar audio.-->
+    <h1>Reproduzindo Áudio</h1> 
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="media/Satin Moonrise - Adam MacDougall.mp3" controls autoplay></audio> 
+
+
+
+                    <!--Segunda maneira de colocar, para que o navegador possa carregar o que é suportado-->
+            <!--O navegador tentará carregar o formato que ele suporta começando pelo que está em primeiro, (não recomendado usar wav pois são arquivos muito grandes e pesados)-->
+    <audio>
+        <source src="media/Satin Moonrise - Adam MacDougall.mp3" type="audio/mpeg">
+        <source src="media/Satin Moonrise - Adam MacDougall.ogg" type="audio/ogg">
+        <source src="media/Satin Moonrise - Adam MacDougall.wav" type="audio/wav">
+    </audio>
+
+
+
+
+
+
+
+                        <!--primeira maneira-->
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu próprio servidor</p>
+    <video src="media/stranger-things(1).mp4" width="500" controls></video>
+
+             <!--Segunda maneira de colocar, para que o navegador possa carregar o que é suportado-->
+       <!--O navegador tentará carregar o formato que ele suporta começando pelo que está em primeiro (não recomendado usar arquivos muito grandes e pesados)-->
+    <video>
+        <source src="media/stranger-things(1).m4v" type="video/m4v">
+        <source src="media/stranger-things(1).mwebm" type="video/webm">
+        <source src="media/stranger-things(1).ogv" type="video/ogv">
+        <!--Etc...-->
+    </video>
+
+
+
+                <!--APenas pegar o link "incorporar" na página do video e coloca-lo aqui no HTML-->
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=LKvjZdaPCbCiz_Af" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

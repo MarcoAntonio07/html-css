@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a{
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkgreen;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            text-decoration: black;
+        }
+
+        a:active{ /* pseudo-class */
+            color: blue;
+        }
+
+        a::before{ /* pseudo-element */
+            content: '1';
+            color: black;
+        }
+        a::after{ /* pseudo-element */
+            content: ' [link]';
+            text-decoration: aqua;
+            color: black;
+        }
+
+        /* # = ID
+           . = Class
+           : = pseudo-class
+           :: = pseudo-element
+           > = children
+
+        /* Pesoudoclasses: são palavras que definem estados de elementos do HTML
+          
+        Pseudoelementos: mexem no conteudo do elemento 
+          
+        É possivel usar pseudoelentos e pseudoclasses também com ID e Classes*/
+          
+    
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
