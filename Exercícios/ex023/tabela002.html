@@ -13,9 +13,18 @@
             text-transform: uppercase;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*Para fazer o efeito de grudado no topo*/
         }
 
         td, th{
@@ -26,6 +35,16 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{ /*Fazendo o efeito de ficar grudado no topo */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even){ /*Para fazer o efeito zebrado: odd(inpares) ou even(pares)*/
+            background-color: lightgray;
         }
 
         .numbers{
@@ -39,18 +58,20 @@
 
     <!-- Anatomia para tabelas grandes
      TABLE
-        THEAD
+        CAPTION = Legenda
+        THEAD = cabeçalho
             TR, TD, TH
-        TBODY
+        TBODY = corpo
             TR, TD, TH
-        TFOOT
+        TFOOT = rodapé
             TR, TD, TH-->
 
     <table>
+        <caption>População das Unidades Federais</caption> <!--Legenda-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -165,7 +186,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numbers"> <strong>128.068.189</strong></td>
             </tr>
         </tfoot>
