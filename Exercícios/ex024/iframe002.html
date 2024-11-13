@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nam, minus quisquam eveniet cupiditate architecto eos fugit et vero non autem iure modi molestiae laborum facilis vitae provident optio exercitationem.</p>
+
+    <!--criando uma navegação entre paginas internas usando o iframe, atraves do target + (name do iframe) fará com que o conteudo seja aberto dentro do iframe-->
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dicta cupiditate numquam eligendi doloribus nesciunt sunt facilis voluptas inventore, facere quo voluptatibus aut quos ad eius? Repudiandae error vitae blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius facilis saepe possimus eligendi quo quas animi voluptatem tempora dicta, nesciunt sapiente ea, praesentium rerum deserunt quisquam odio mollitia harum!</p>
+
+    <iframe src="" class="iframe" name="frame">
+        <p>Infelizmente sei navegador não é compativel com isso.</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni dicta fuga, iste voluptates impedit amet laboriosam laudantium debitis! Cum consequuntur possimus voluptas. Autem illo veritatis dolorum aut in mollitia! Vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab perferendis, suscipit illo dolores ad nam beatae. Omnis voluptates quidem velit fuga labore veritatis doloribus dolor quas asperiores, temporibus repellendus.</p>
+</body>
+</html>
