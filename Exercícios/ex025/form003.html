@@ -8,34 +8,91 @@
 <body>
     <h1>Teste de Formulário </h1>
     <form action="" method="get" autocomplete="on">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" value="5">
-        </p>
-        <p>
-            <label for="imes">Período Letivo</label>
-            <input type="month" name="mes" id="imes" value="2024-11">
-        </p>
-        <p>
-            <label for="idia">Dia da Prova</label>
-            <input type="date" name="dia" id="idia">
-        </p>
-        <p>
-            <label for="ihora">Horário da Prova</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
-        <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" placeholder="(xx) xxxx-xxxx">
-        </p>
-        <p>
-           <input type="submit" value="Enviar">
-           <input type="reset" value="Limpar">
-        </p>
+        <fieldset> <!--Agrupar todo o conteúdo-->
+            <legend>Dados Pessoais</legend> <!--Legenda do conteúdo-->
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" value="5">
+            </p>
+            <p>
+                <label for="imes">Período Letivo</label>
+                <input type="month" name="mes" id="imes" value="2024-11">
+            </p>
+            <p>
+                <label for="idia">Dia da Prova</label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p>
+                <label for="ihora">Horário da Prova</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="iemail" >E-mail</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx) xxxx-xxxx" required>
+            </p>
+            <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            </p>
+     </fieldset>
+
+     <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isexmas"  value="M">
+        <label for="isexmas">Masculino</label><br>
+        <input type="radio" name="sexo" id="isexfem" value="F">
+        <label for="isexfem">Feminino</label> <br>
+        <input type="radio" name="sexo" id="ioutro">
+        <label for="ioutro">Outro</label>
+
+        <!--Todo botão do tipo radio que fizer parte de um mesmo grupo(fieldset) precisa ter o mesmo nome(name)-->
+     </fieldset>
+
+     <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esbas" id="iesbas"> 
+        <label for="iesbas">Basquete</label>
+        <br>
+        <input type="checkbox" name="esten" id="iesten">  
+        <label for="iesten">Tênis</label>
+        <br>
+        <input type="checkbox" name="esfut" id="iesfut"> 
+        <label for="iesfut">Futebol</label>
+        <br>
+        <input type="checkbox" name="essoc" id="iessoc">  
+        <label for="iessoc">Socyte</label>
+     </fieldset>
+
+     <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor" value="#00ff55">
+     </p>
+
+     <p>
+        <label for="inivel">Nivel de Satisfação: </label>
+        <input type="range" name="nivel" id="inivel" min="1" max="7">
+       
+     </p>
+
+     <p>
+        <label for="ifoto">Foto de Perfil</label>
+        <input type="file" name="foto" id="ifoto">
+
+        <!--Sempre usar o Método "Post" quando usar o Tipo (File) por ser um input de arquivos -->
+     </p>
+
+
+
+
+
 
         <!--
                 Tipos de input:
@@ -44,11 +101,19 @@
              Month = Mês e Ano
              Date = Dia, Mês e Ano
              Time = Hora
+             E-mail = E-mail
              Tel = Telefone
+             Checkbox = Check
+             Radio = Círculo
+             Color = Cor
+             Range = Nível
 
                 ATRIBUTOS:
              Value = Valor já preenchido
-                -->
+             placeholder = dica
+             Min = minimo e Max = máximo
+               
+             Anotação: Estudar sobre Expressões Regulares-->
     </form>
 </body>
 </html>
