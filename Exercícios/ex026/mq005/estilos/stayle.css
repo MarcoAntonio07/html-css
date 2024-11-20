@@ -28,19 +28,19 @@ header h1{
     font-family: "Bebas Neue", serif;
 }
 
-#burguer{
-    background-color: rgba(0, 0, 0, 0.545);
-    color: white;
-    display: block;
-    text-align: center;
+.container-burguer{
+    background-color: rgba(47, 79, 79, 0.674);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    cursor: pointer;
-}
-
-#burguer{
-    background-color: white;
-    color: black;
     
+}
+#burguer{
+    color: white;
+    width: 25px;
+    cursor: pointer;
+
 }
 
 menu{
