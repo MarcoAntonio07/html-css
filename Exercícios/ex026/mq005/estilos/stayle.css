@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root{
+    --cor1: #0D0D0D;
+    --cor2: #F2E7DC;
+    --cor3: #A9D9D0;
+
+}
+
+body{
+    background-image: linear-gradient(to top, #0d0d0d98 10%, #f2e7dcb7 10%, #a9d9d0a2);
+}
+
+header{
+    background-color: darkgray;
+}
+
+header h1{
+    padding: 10px;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+}
+
+#burguer{
+    background-color: rgba(0, 0, 0, 0.545);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer{
+    background-color: white;
+    color: black;
+    
+}
+
+menu{
+    display: none;
+    
+}
+
+menu > ul {
+    list-style: none;
+    
+    
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: gray;
+    color: var(--cor3);
+    border: 1px solid white;
+    
+}
+
+menu > ul > li > a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+
+main{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px darkgray;
+}
+
+article > h2 {
+    padding-bottom:20px;
+    font-family: "Bebas Neue", serif;
+    
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px
+}
+
+
