@@ -6,7 +6,7 @@
     <title>Flexible Box</title>
     <style>
         .container{
-            width: 100vw;
+            width: 70vw;
             height: 100vh;
             background-color: darkblue;
             display: flex;
@@ -21,6 +21,7 @@
             background-color: purple;
             border: 2px solid white; 
             order: 4;
+            
         }
 
         .item2{
@@ -45,24 +46,10 @@
             background-color: red;
             border: 2px solid white;
             order: 6;
+            flex-grow: 1;
         }
 
-        .item5{
-            width: 200px;
-            height: 200px;
-            background-color: green;
-            border: 2px solid white;
-            order: 5;
-        }
-
-        .item6{
-            width: 200px;
-            height: 200px;
-            background-color: white;
-            border: 2px solid white;
-            order: 1;
-            
-        }
+        
 
         /*  
             Propriedade do Pai:
@@ -76,8 +63,11 @@
             
             Propriedade dos filhos:
 
-            order: 1;
-            align-self: flex-end;
+            order: 1; (individualmente aplicado)
+            align-self: flex-end; (individualmente aplicado)
+            
+            flex-basis: 100px; (individualmente aplicado)
+            flex-shrink (encolher) | flex-grow (crescer) > os valores vão de 0 (negativo) à 1 (positivo)
 
         */
 
